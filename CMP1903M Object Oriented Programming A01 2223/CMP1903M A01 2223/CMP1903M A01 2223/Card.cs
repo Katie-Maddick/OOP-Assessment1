@@ -9,10 +9,39 @@ namespace CMP1903M_A01_2223
     class Card
     {
         //Base for the Card class.
-        //Value: numbers 1 - 13
-        //Suit: numbers 1 - 4
-        //The 'set' methods for these properties could have some validation
-        public int Value { get; set; }
-        public int Suit { get; set; }
+        //Initial variables 
+        private int _Value;
+        private int _Suit;
+
+        //Validation for Value
+        public int setValue
+        {
+            get { return _Value; }
+            set
+            {
+                //Prevents value if out of range
+                while((value < 1) || (value > 13)){
+                    Console.WriteLine("Value is out of range");
+                }
+                _Value = value; 
+            }
+        }
+
+        //Validation for Suit
+        public int setSuit
+        {
+            get { return _Suit; }
+            set
+            {
+                //Prevents Suit if out of range
+                while ((value < 1) || (value > 4))
+                {
+                    Console.WriteLine("Suit out of range");
+                }
+            }
+        }
     }
+
+    
+
 }

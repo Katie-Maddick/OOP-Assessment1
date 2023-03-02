@@ -10,6 +10,9 @@ namespace CMP1903M_A01_2223
     {
         static void Main(string[] args)
         {
+            //Calls the test to run
+            Testing t1 = new Testing();
+            t1.Test();
 
         }
     }
