@@ -13,7 +13,7 @@ namespace CMP1903M_A01_2223
             //Calls the test to run
             Testing t1 = new Testing();
             t1.Test();
-
+            Console.WriteLine("Tests Successful");
         }
     }
 }

@@ -20,7 +20,8 @@ namespace CMP1903M_A01_2223
             set
             {
                 //Prevents value if out of range
-                while((value < 1) || (value > 13)){
+                if ((value < 1) || (value > 13))
+                {
                     Console.WriteLine("Value is out of range");
                 }
                 _Value = value; 
@@ -34,10 +35,11 @@ namespace CMP1903M_A01_2223
             set
             {
                 //Prevents Suit if out of range
-                while ((value < 1) || (value > 4))
+                if ((value < 1) || (value > 4))
                 {
                     Console.WriteLine("Suit out of range");
                 }
+                _Suit = value;
             }
         }
     }
